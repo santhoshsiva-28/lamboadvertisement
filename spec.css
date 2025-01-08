@@ -1,0 +1,234 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body and Container */
+body {
+    background: radial-gradient(circle, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 1));
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: radial-gradient(circle, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 1));
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+}
+
+header .logo h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+/* Home Section */
+.hero-section {
+    background: radial-gradient(circle, rgba(26, 26, 26, 0.8), rgba(26, 26, 26, 1));
+    color: #fff;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero-section h2 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    padding: 12px 25px;
+    background-color: #f1c40f;
+    color: #000;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+}
+
+/* Models Section */
+.models-section {
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 1));
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.models-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.models-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.model-card {
+    width: 30%;
+    margin-bottom: 30px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.model-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.model-card h3 {
+    margin: 15px 0;
+    font-size: 1.8rem;
+}
+
+.model-card p {
+    font-size: 1.1rem;
+    color: #888;
+}
+
+.model-card a {
+    text-decoration: none;
+}
+
+/* Specs Section */
+.specs-section {
+    background: radial-gradient(circle, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 1));
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.specs-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.specs-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.specs-container img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.specs-container ul {
+    list-style: none;
+    padding: 0;
+    font-size: 1.2rem;
+}
+
+.specs-container ul li {
+    margin: 10px 0;
+}
+
+/* Contact Section */
+.contact-section {
+    background: radial-gradient(circle, rgba(26, 26, 26, 0.8), rgba(26, 26, 26, 1));
+    padding: 60px 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.contact-section form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.contact-section input,
+.contact-section textarea {
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 1.1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.contact-section button {
+    padding: 12px;
+    background-color: #f1c40f;
+    color: #000;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .models-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .model-card {
+        width: 80%;
+        margin: 10px 0;
+    }
+
+    .specs-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .specs-container img {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
